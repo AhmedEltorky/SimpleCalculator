@@ -14,11 +14,6 @@ import java.util.StringTokenizer;
  */
 public class LAB04Assignment {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        double fNum = 0, sNum = 0;
         String op;
         System.out.println("Please Enter your opertaion (separate between numbers and operator by space): ");
         StringTokenizer st = new StringTokenizer(new Scanner(System.in).nextLine());
