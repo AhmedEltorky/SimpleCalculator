@@ -20,7 +20,7 @@ public class LAB04Assignment {
     public static void main(String[] args) {
         double fNum = 0, sNum = 0;
         String op;
-        System.out.println("Please Enter your opertaion: ");
+        System.out.println("Please Enter your opertaion (separate between numbers and operator by space): ");
         StringTokenizer st = new StringTokenizer(new Scanner(System.in).nextLine());
         fNum = Double.parseDouble(st.nextToken());
         op = st.nextToken();
@@ -29,11 +29,19 @@ public class LAB04Assignment {
         switch (op) {
             case "+":
                 printResult(Double.toString(add(fNum, sNum)));
+                break;
+            case "-":
+                printResult(Double.toString(sub(fNum, sNum)));
+                break;
         }
     }
 
     public static double add(double fNum, double sNum) {
         return fNum + sNum;
+    }
+
+    public static double sub(double fNum, double sNum) {
+        return fNum - sNum;
     }
 
     public static void printResult(String res) {
